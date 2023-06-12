@@ -2,7 +2,7 @@
 console.log('JS OK');
 
 //CREO UN ARRAY DEI MEMBRI DEL TEAM:
-members = [
+const members = [
     {
         firstName: 'Wayne',
         surName: 'Barnett',
@@ -49,20 +49,22 @@ members = [
 //STAMPO TUTTO L'ARRAY SOTTOFORMA DI TABELLA:
 console.table(members);
 
-//STAMPO TUTTO IN CONSOLE:
-console.log(members);
+//STAMPO IN CONSOLE LE INFO RELATIVE AL PRIMO OGGETTO DELL'ARRAY:
+console.log('PRIMO OGGETTO ARRAY: ' + members[0]['firstName'] , members[0]['role'] , members[0]['photo']);
 
-//STAMPO IN CONSOLE IL NOME, IL RUOLO E LA STRINGA DELLA FOTO TENTATIVO 1:
-console.log(members.firstName + members.role + members.photo);
+//STAMPO IN CONSOLE LE INFO RELATIVE AL SECONDO OGGETTO DELL'ARRAY:
+console.log('SECONDO OGGETTO ARRAY: ' + members[1]['firstName'] , members[1]['role'] , members[1]['photo']);
 
-//STAMPO IN CONSOLE IL NOME, IL RUOLO E LA STRINGA DELLA FOTO TENTATIVO 2:
-console.log(members[firstName] + members[role] + members[photo]);
+//STAMPO IN CONSOLE LE INFO RELATIVE AL TERZO OGGETTO DELL'ARRAY:
+console.log('TERZO OGGETTO ARRAY: ' + members[2]['firstName'] , members[2]['role'] , members[2]['photo']);
 
-//STAMPO IN CONSOLE IL NOME, IL RUOLO E LA STRINGA DELLA FOTO TENTATIVO 3:
-console.log(members.firstName[i] + members.role[i] + members.photo[i]);
+//STAMPO IN CONSOLE LE INFO RELATIVE AL QUARTO OGGETTO DELL'ARRAY:
+console.log('QUARTO OGGETTO ARRAY: ' + members[3]['firstName'] , members[3]['role'] , members[3]['photo']);
 
-//STAMPO IN CONSOLE IL NOME, IL RUOLO E LA STRINGA DELLA FOTO TENTATIVO 4:
-const names = members.firstName;
-console.log(names);
-console.log(members.names);
-console.log(members[firstName]);
+//STAMPO IN CONSOLE LE INFO RELATIVE AL QUINTO OGGETTO DELL'ARRAY:
+console.log('QUINTO OGGETTO ARRAY: ' + members[4]['firstName'] , members[4]['role'] , members[4]['photo']);
+
+//STAMPO IN CONSOLE LE INFO RELATIVE AL SESTO OGGETTO DELL'ARRAY:
+console.log('SESTO OGGETTO ARRAY: ' + members[5]['firstName'] , members[5]['role'] , members[5]['photo']);
+
+
