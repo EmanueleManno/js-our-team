@@ -67,4 +67,11 @@ console.log('QUINTO OGGETTO ARRAY: ' + members[4]['firstName'] , members[4]['rol
 //STAMPO IN CONSOLE LE INFO RELATIVE AL SESTO OGGETTO DELL'ARRAY:
 console.log('SESTO OGGETTO ARRAY: ' + members[5]['firstName'] , members[5]['role'] , members[5]['photo']);
 
+//STAMPO IN CONSOLE TUTTI I NOMI:
+console.log('I NOMI: ' + members[0]['firstName'] , members[1]['firstName'] , members[2]['firstName'] , members[3]['firstName'] , members[4]['firstName'] , members[5]['firstName']);
 
+//STAMPO IN CONSOLE TUTTI I RUOLI:
+console.log('I RUOLI: ' + members[0]['role'] , members[1]['role'] , members[2]['role'] , members[3]['role'] , members[4]['role'] , members[5]['role']);
+
+//STAMPO IN CONSOLE TUTTE LE STRINGHE FOTO:
+console.log('STRINGHE FOTO: ' + members[0]['photo'] , members[1]['photo'] , members[2]['photo'] , members[3]['photo'] , members[4]['photo'] , members[5]['photo']);
