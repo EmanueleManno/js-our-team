@@ -16,3 +16,14 @@ body {
     margin: 0 auto;
 }
 
+/*COLS*/
+.col-3 {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: azure;
+    font-size: 20px;
+    color: cornflowerblue;
+    height: 600px;
+    width: 200px;
+}
+

@@ -1,6 +1,11 @@
 //VEDO SE FUNZIONA:
 console.log('JS OK');
 
+//RECUPERO GLI ELEMENTI DAL DOM:
+const names = document.getElementById('names');
+const roles = document.getElementById('roles');
+const photos = document.getElementById('photos');
+
 //CREO UN ARRAY DEI MEMBRI DEL TEAM:
 const members = [
     {
@@ -75,3 +80,42 @@ console.log('I RUOLI: ' + members[0]['role'] , members[1]['role'] , members[2]['
 
 //STAMPO IN CONSOLE TUTTE LE STRINGHE FOTO:
 console.log('STRINGHE FOTO: ' + members[0]['photo'] , members[1]['photo'] , members[2]['photo'] , members[3]['photo'] , members[4]['photo'] , members[5]['photo']);
+
+//PREPARO LA STRINGA DEI NOMI CHE METTERO' IN PAGINA:
+let namesList = '<ul></ul>';
+
+//PREPARO LA LISTA DEI RUOLI CHE METTERO' IN PAGINA:
+let rolesList = '<ul></ul>';
+
+//PREPARO LA LISTA DELLE FOTO CHE METTERO' IN PAGINA:
+let photosList = '<ul></ul>';
+
+//RECUPERO I NOMI:
+for (let i = 0; i < members.length; i++) {
+    const singleName = members[i]['firstName'];
+    namesList += `<ul>${singleName}</ul>`;
+    console.log(namesList);
+}
+
+//RECUPERO I RUOLI:
+for (let i = 0; i < members.length; i++) {
+    const singleRole = members[i]['role'];
+    rolesList += `<ul>${singleRole}</ul>`;
+    console.log(rolesList);
+}
+
+//RECUPERO LE STRINGHE DELLE FOTO:
+for (let i = 0; i < members.length; i++) {
+    const singlePhoto = members[i]['photo'];
+    photosList += `<ul>${singlePhoto}</ul>`;
+    console.log(photosList);
+}
+
+//STAMPO IN PAGINA I NOMI:
+names.innerHTML = namesList;
+
+//STAMPO IN PAGINA I RUOLI:
+roles.innerHTML = rolesList;
+
+//STAMPO IN PAGINA LE STRINGHE FOTO:
+photos.innerHTML = photosList;
