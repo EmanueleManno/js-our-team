@@ -54,6 +54,13 @@ const members = [
 //STAMPO TUTTO L'ARRAY SOTTOFORMA DI TABELLA:
 console.table(members);
 
+//CICLO FOR:
+for (let member of members) {
+    for (let key in member) {
+        console.log(key, member[key]);
+    };
+}
+
 //STAMPO IN CONSOLE LE INFO RELATIVE AL PRIMO OGGETTO DELL'ARRAY:
 console.log('PRIMO OGGETTO ARRAY: ' + members[0]['firstName'] , members[0]['role'] , members[0]['photo']);
 
@@ -82,32 +89,32 @@ console.log('I RUOLI: ' + members[0]['role'] , members[1]['role'] , members[2]['
 console.log('STRINGHE FOTO: ' + members[0]['photo'] , members[1]['photo'] , members[2]['photo'] , members[3]['photo'] , members[4]['photo'] , members[5]['photo']);
 
 //PREPARO LA STRINGA DEI NOMI CHE METTERO' IN PAGINA:
-let namesList = '<ul></ul>';
+let namesList = '';
 
 //PREPARO LA LISTA DEI RUOLI CHE METTERO' IN PAGINA:
-let rolesList = '<ul></ul>';
+let rolesList = '';
 
 //PREPARO LA LISTA DELLE FOTO CHE METTERO' IN PAGINA:
-let photosList = '<ul></ul>';
+let photosList = '';
 
 //RECUPERO I NOMI:
 for (let i = 0; i < members.length; i++) {
     const singleName = members[i]['firstName'];
-    namesList += `<ul>${singleName}</ul>`;
+    namesList += `<li>${singleName}</li>`;
     console.log(namesList);
 }
 
 //RECUPERO I RUOLI:
 for (let i = 0; i < members.length; i++) {
     const singleRole = members[i]['role'];
-    rolesList += `<ul>${singleRole}</ul>`;
+    rolesList += `<li>${singleRole}</li>`;
     console.log(rolesList);
 }
 
 //RECUPERO LE STRINGHE DELLE FOTO:
 for (let i = 0; i < members.length; i++) {
     const singlePhoto = members[i]['photo'];
-    photosList += `<ul>${singlePhoto}</ul>`;
+    photosList += `<li>${singlePhoto}</li>`;
     console.log(photosList);
 }
 
